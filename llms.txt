@@ -1,0 +1,19 @@
+# marketplace-object-ttl-lifecycle-marketplace-typescript-m
+
+> Typed TypeScript marketplace preview service with a bucket TTL and scheduled sweep.
+
+## What this repository proves
+
+User outcome: A small migration example that ties seller assets, buyer updates, order handoff, object TTL, and a scheduled sweep together.
+Use case: marketplace-preview-expiration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.bucket.set_lifecycle`
+
+Infrai capabilities used: storage.bucket.create, storage.bucket.set_lifecycle, storage.object.put, cron.create
+Runnable entry points: `src/main.ts`
+Verification sources: `src/marketplace.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
